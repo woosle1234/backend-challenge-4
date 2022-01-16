@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h3 id="logo">Travel Lisiting Site</h3>
+            <span id="duck" class="duck" style="font-size:30px;cursor:pointer;display: grid;grid-template-columns: 2fr 1fr;justify-content: center;align-items: center;color: gray;" onclick="openNav()"><h3>MENU</h3><img src="./img/duck.gif" alt="" style="height: 50px;width: 50px;justify-content: center;"></span>
+        </nav>
+        <section>
+            <div class="hero">
+                <img src="./img/p5.png" alt="">
+                <h1 class="headline">Rent Air Bnb</h1>
+            </div>
+        </section>
+    </header>
+
+    <div class="slider"></div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="./Listing Info.html">Listing Info</a>
+        <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Travel Blog</a>
+    </div>
+
+    <div id="loading">
+        <img src="./img/loading.gif" alt="...">
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
